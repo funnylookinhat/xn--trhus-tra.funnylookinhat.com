@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://funnylookinhat.com/flh.css?v=2021-07-23">
+
+    <title>server: alder</title>
+    <style>
+      pre {
+        text-align: left;
+        font-family: monospace;
+        margin: 1ch auto;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">server: alder</h1>
+
+    <p style="text-align: center;">
+      <b style="font-weight: bold;">2010 Mac Mini (a1347)</b>
+    </p>
+
+    <pre>
+~ ➜ sed -E '/processor(.*): 1/q' /proc/cpuinfo | head -n -1
+processor       : 0
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 69
+model name      : Intel(R) Core(TM) i5-4260U CPU @ 1.40GHz
+stepping        : 1
+microcode       : 0x26
+cpu MHz         : 978.120
+cache size      : 3072 KB
+physical id     : 0
+siblings        : 4
+core id         : 0
+cpu cores       : 2
+apicid          : 0
+initial apicid  : 0
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmu>
+bugs            : cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips        : 4000.09
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 39 bits physical, 48 bits virtual
+power management:
+</pre>
+
+    <pre>
+~ ➜ uname -a
+Linux alder 5.4.0-84-generic #94-Ubuntu SMP Thu Aug 26 20:27:37 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+</pre>
+
+    <pre>
+~ ➜ free
+              total        used        free      shared  buff/cache   available
+Mem:        3903748      586176      289732        1828     3027840     3017728
+Swap:       3903484       22528     3880956
+</pre>
+
+    <pre>
+~ ➜ speedtest-cli --simple
+Ping: 11.06 ms
+Download: 634.56 Mbit/s
+Upload: 489.88 Mbit/s
+</pre>
+
+    <ul class="gallery">
+      <li>
+        <a href="barn-server-alder.jpg"><img src="thumb-barn-server-alder.jpg"></a>
+        <p><a href="barn-server-alder.jpg">barn-server-alder.jpg</a></p>
+      </li>
+    </ul>
+
+  </body>
+
+</html>

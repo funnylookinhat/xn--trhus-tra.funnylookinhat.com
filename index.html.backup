@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://funnylookinhat.com/flh.css?v=2021-07-23">
+
+    <title>træhus</title>
+    <style>
+      p.code {
+        text-align: left;
+        font-family: monospace;
+        max-width: 80ch;
+        margin: 1ch auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">træhus</h1>
+
+    <p style="text-align: center;">
+      <b style="font-weight: bold;">We're online.</b>
+    </p>
+
+    <pre>
+~ ➜ sed -E '/processor(.*): 1/q' /proc/cpuinfo | head -n -1<br>
+processor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0<br>
+vendor_id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: GenuineIntel<br>
+cpu family&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 6<br>
+model&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 69<br>
+model name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Intel(R) Core(TM) i5-4260U CPU @ 1.40GHz<br>
+stepping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 1<br>
+microcode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0x26<br>
+cpu MHz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 978.120<br>
+cache size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 3072 KB<br>
+physical id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0<br>
+siblings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 4<br>
+core id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0<br>
+cpu cores&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 2<br>
+apicid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 0<br>
+initial apicid&nbsp;&nbsp;: 0<br>
+fpu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: yes<br>
+fpu_exception&nbsp;&nbsp;&nbsp;: yes<br>
+cpuid level&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 13<br>
+wp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: yes<br>
+flags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor>
+bugs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds<br>
+bogomips&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 4000.09<br>
+clflush size&nbsp;&nbsp;&nbsp;&nbsp;: 64<br>
+cache_alignment&nbsp;: 64<br>
+address sizes&nbsp;&nbsp;&nbsp;: 39 bits physical, 48 bits virtual<br>
+power management:<br>
+</pre>
+
+    <p class="code">
+~ ➜ uname -a<br>
+Linux alder 5.4.0-84-generic #94-Ubuntu SMP Thu Aug 26 20:27:37 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+</p>
+
+    <p class="code">
+~ ➜ free<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;used&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;free&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;shared&nbsp;&nbsp;buff/cache&nbsp;&nbsp;&nbsp;available<br>
+Mem:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3903748&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;586176&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;289732&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1828&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3027840&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3017728<br>
+Swap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3903484&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22528&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3880956<br>
+</p>
+
+    <p class="code">
+~ ➜ speedtest-cli --simple<br>
+Ping: 11.06 ms<br>
+Download: 634.56 Mbit/s<br>
+Upload: 489.88 Mbit/s<br>
+</p>
+
+  </body>
+
+</html>
